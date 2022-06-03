@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import moment from 'moment'
 
 const Article = ({ article }) => {
-
   const { title, image_url, published_at, url } = article
-  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className='list_inner'>
@@ -23,7 +21,7 @@ const Article = ({ article }) => {
 
       <div className='details'>
         <a href={`${url}`} target='_blank' rel='noreferrer'>
-          <h3 className='title' >
+          <h3 className='title'>
             {title}
           </h3>
         </a>

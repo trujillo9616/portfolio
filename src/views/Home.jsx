@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* End  shane_tm_testimonials*/}
+      {/* End  shane_tm_testimonials */}
 
       <Publications />
       {/* End Blog Section */}
