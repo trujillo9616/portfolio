@@ -10,7 +10,7 @@ const CallToAction = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen)
   }
 
   return (

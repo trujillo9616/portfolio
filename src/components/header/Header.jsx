@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Scrollspy from 'react-scrollspy'
 import Social from '../SocialTwo'
-import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -14,7 +13,7 @@ const Header = () => {
     } else {
       setNavbar(false)
     }
-  };
+  }
 
   window.addEventListener('scroll', changeBackground)
 
@@ -67,7 +66,7 @@ const Header = () => {
                   }
                 >
                   <div className='hamburger-box'>
-                    <div className='hamburger-inner'></div>
+                    <div className='hamburger-inner' />
                   </div>
                 </div>
                 {/* End hamburger menu */}
@@ -108,7 +107,7 @@ const Header = () => {
                   </a>
                 </li>
               </ul>
-              <div className="social-menu">
+              <div className='social-menu'>
                 <Social />
               </div>
               {/* End social share */}
