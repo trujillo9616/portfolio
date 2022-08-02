@@ -2,9 +2,12 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import './assets/scss/style.scss'
+import { SnackbarProvider } from 'notistack'
 
 ReactDOM.render(
-  <App />,
+  <SnackbarProvider>
+    <App />
+  </SnackbarProvider>,
   document.getElementById('root'),
   document.body.classList.add('loaded')
 )

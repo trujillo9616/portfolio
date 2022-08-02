@@ -38,8 +38,6 @@ const Social = () => {
           </li>
         ))}
       </ul>
-
-      {/* END social */}
     </div>
   )
 }

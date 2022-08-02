@@ -8,9 +8,9 @@ export default function ScrollToTop() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
-  };
+      behavior: 'smooth',
+    })
+  }
 
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
@@ -20,25 +20,25 @@ export default function ScrollToTop() {
       } else {
         setIsVisible(false);
       }
-    };
+    }
 
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, [])
 
   return (
     <>
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className="scroll_up"
-          data-aos="fade-left"
-          data-aos-duration="1200"
+          className='scroll_up'
+          data-aos='fade-left'
+          data-aos-duration='1200'
         >
-          <img src="/img/arrow-up.svg" alt="scroll up" />
+          <img src='/img/arrow-up.svg' alt='scroll up' />
         </div>
       )}
     </>
-  );
+  )
 }
