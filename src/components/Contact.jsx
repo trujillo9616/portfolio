@@ -1,24 +1,29 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
+import { useSnackbar } from 'notistack'
 
-const EMAILJS_SERVICE_ID='service_portfolio'
-const EMAILJS_PUBLICKEY='4bH1s0VeQXX1EH7dl'
-const EMAILJS_TEMPLATE_ID='template_portfolio'
+const EMAILJS_SERVICE_ID = 'service_portfolio'
+const EMAILJS_PUBLICKEY = '4bH1s0VeQXX1EH7dl'
+const EMAILJS_TEMPLATE_ID = 'template_portfolio'
 
-const Contact = () => {
+const Contact = ({ toggleModal }) => {
+  const { enqueueSnackbar } = useSnackbar()
   const { register, handleSubmit, formState: { errors } } = useForm()
 
   const sendFeedback = (serviceID, templateID, variables) => {
     emailjs.send(serviceID, templateID, variables, EMAILJS_PUBLICKEY)
       .then(res => {
-        console.log('Email successfully sent!')
+        enqueueSnackbar('Message sent! I\'ll get in touch soon!', { variant: 'success' })
       })
-      .catch(err => console.error('There has been an error!', err))
+      .catch(err => {
+        enqueueSnackbar('Message failed to send.', { variant: 'error' })
+      })
   }
 
   const onSubmit = (data, e) => {
     e.preventDefault()
+    toggleModal()
     sendFeedback(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { from_name: data.name, message: data.message, reply_to: data.email })
     e.target.reset()
   }
@@ -38,7 +43,6 @@ const Contact = () => {
                 <span>Name is required</span>
               )}
             </li>
-            {/* End first name field */}
 
             <li>
               <input
@@ -58,16 +62,14 @@ const Contact = () => {
               />
               {errors.email && <span role='alert'>{errors.email.message}</span>}
             </li>
-            {/* End email name field */}
 
             <li>
               <textarea
                 {...register('message', { required: true })}
                 placeholder='Message'
-              ></textarea>
+              />
               {errors.subject && <span>Subject is required.</span>}
             </li>
-            {/* End subject  field */}
           </ul>
         </div>
 
@@ -76,9 +78,7 @@ const Contact = () => {
             Send Message
           </button>
         </div>
-        {/* End tokyo_tm_button */}
       </form>
-      {/* End contact */}
     </>
   )
 }

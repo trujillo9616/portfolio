@@ -1,26 +1,18 @@
-# Tokyo React Personal Portfolio Template
+# Personal Portfolio Website Source
 
 ## Description
-Setup Procedure
+Personal Portfolio Website Source Code is a simple website that I made to practice my skills in React, Sass, and JavaScript. Next iteration of this website might be build with TypeScript and another framework like Vue.js.
 ## Project setup
 ```
-npm install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run start
+yarn start
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-See [Configuration Reference](https://cli.vuejs.org/config/).

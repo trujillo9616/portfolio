@@ -24,20 +24,19 @@ const SocialShare = [
 const Social = () => {
   return (
     <>
-      <ul className="social social-default position-relative">
+      <ul className='social social-default position-relative'>
         {SocialShare.map((val, i) => (
           <li key={i}>
-            <a href={`${val.link}`} target="_blank" rel="noreferrer">
+            <a href={`${val.link}`} target='_blank' rel='noreferrer'>
               <img
-                className="svg"
+                className='svg'
                 src={`/img/svg/social/${val.iconName}.svg`}
-                alt="social"
+                alt='social'
               ></img>
             </a>
           </li>
         ))}
       </ul>
-      {/* END social */}
     </>
   )
 }

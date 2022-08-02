@@ -17,7 +17,6 @@ const Article = ({ article }) => {
           }}
         ></div>
       </div>
-      {/* End image */}
 
       <div className='details'>
         <a href={`${url}`} target='_blank' rel='noreferrer'>
@@ -29,7 +28,6 @@ const Article = ({ article }) => {
           By <a href='#'>Adrian Trujillo</a> <span>{moment(published_at).format('ll')}</span>
         </p>
       </div>
-      {/* End details */}
     </div>
   )
 }

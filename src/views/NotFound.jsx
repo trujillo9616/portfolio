@@ -21,7 +21,6 @@ const NotFound = () => {
           </Link>
         </div>
       </div>
-      {/* End .hero */}
     </div>
   )
 }
