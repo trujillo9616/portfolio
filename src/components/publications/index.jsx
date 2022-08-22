@@ -515,8 +515,6 @@ const publications = [
   }
 ]
 
-console.log(publications)
-
 Modal.setAppElement('#root')
 
 const base_url = 'https://medium2.p.rapidapi.com'
