@@ -6,7 +6,7 @@ import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
 import Technologies from '../components/Technologies'
 import Testimonial from '../components/Testimonial'
-import Publications from '../components/Publications'
+// import Publications from '../components/Publications'
 import CallToAction from '../components/CallToAction'
 import Footer from '../components/Footer'
 
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Publications />
+      {/* <Publications /> */}
 
       <CallToAction />
 
