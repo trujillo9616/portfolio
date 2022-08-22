@@ -6,28 +6,26 @@ const Article = ({ article }) => {
 
   return (
     <div className='list_inner'>
-      <div className='image' >
-        <a href={`${url}`} target='_blank' rel='noreferrer'>
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        <div className='image' >
           <img src='/img/placeholders/4-3.jpg' alt='thumb' />
-        </a>
-        <div
-          className='main'
-          style={{
-            backgroundImage: `url(${image_url})`,
-          }}
-        ></div>
-      </div>
+          <div
+            className='main'
+            style={{
+              backgroundImage: `url(${image_url})`,
+            }}
+          ></div>
+        </div>
 
-      <div className='details'>
-        <a href={`${url}`} target='_blank' rel='noreferrer'>
+        <div className='details'>
           <h3 className='title'>
             {title}
           </h3>
-        </a>
-        <p className='date'>
-          By Adrian Trujillo <span>{moment(published_at).format('ll')}</span>
-        </p>
-      </div>
+          <p className='date'>
+            By Adrian Trujillo <span>{moment(published_at).format('ll')}</span>
+          </p>
+        </div>
+      </a>
     </div>
   )
 }
