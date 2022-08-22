@@ -544,7 +544,7 @@ const Publications = () => {
   }, [articles])
 
   return (
-    <div className='shane_tm_section' id='news'>
+    <div className='shane_tm_section' id='publications'>
       <div className='shane_tm_news'>
         <div className='container'>
           <div className='shane_tm_title'>
