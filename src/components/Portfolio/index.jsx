@@ -1,5 +1,4 @@
 import React from 'react'
-import SimpleReactLightbox from 'simple-react-lightbox'
 
 const portfolioItems = [
   {
@@ -19,7 +18,6 @@ const portfolioItems = [
 const Portfolio = () => {
   return (
     <div className='shane_tm_section' id='portfolio'>
-      <SimpleReactLightbox>
         <div className='shane_tm_portfolio'>
           <div className='container'>
             <div className='positon-relative'>
@@ -74,7 +72,6 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </SimpleReactLightbox>
     </div>
   )
 }
