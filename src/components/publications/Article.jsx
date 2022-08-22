@@ -25,7 +25,7 @@ const Article = ({ article }) => {
           </h3>
         </a>
         <p className='date'>
-          By <a href='#'>Adrian Trujillo</a> <span>{moment(published_at).format('ll')}</span>
+          By Adrian Trujillo <span>{moment(published_at).format('ll')}</span>
         </p>
       </div>
     </div>
