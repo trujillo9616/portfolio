@@ -6,7 +6,7 @@ import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
 import Technologies from '../components/Technologies'
 import Testimonial from '../components/Testimonial'
-import Publications from '../components/Publications/Publications'
+import Publications from '../components/Publications.jsx'
 import CallToAction from '../components/CallToAction'
 import Footer from '../components/Footer'
 
