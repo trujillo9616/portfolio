@@ -1,23 +1,23 @@
 const SocialShare = [
   {
     iconName: 'linkedin',
-    link: 'https://www.linkedin.com/in/adrian-trujillo96/',
+    link: 'https://www.linkedin.com/in/a-trujillo/',
   },
   {
     iconName: 'github',
     link: 'https://github.com/trujillo9616',
   },
-  { 
+  {
     iconName: 'medium',
-    link: 'https://medium.com/@adrian-td96' 
+    link: 'https://medium.com/@adrian-td96'
   },
-  { 
+  {
     iconName: 'twitter',
-    link: 'https://twitter.com/trujillo9616' 
+    link: 'https://twitter.com/trujillo9616'
   },
-  { 
+  {
     iconName: 'instagram',
-    link: 'https://www.instagram.com/trujillo9616/' 
+    link: 'https://www.instagram.com/trujillo9616/'
   }
 ]
 
