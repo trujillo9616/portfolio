@@ -2,20 +2,30 @@ import React from 'react'
 
 const portfolioItems = [
   {
+    title: 'URL Shortener',
+    meta: 'React, Next.js, TypeScript, Tailwindcss, Node, Express, tRPC, Prisma, PlanetScaleDB',
+    img: 'url-shortener',
+    link: 'https://www.tru-sh.me/',
+    delayAnimation: '100',
+  },
+  {
     img: 'movieapi',
     title: 'MovieApp Website',
+    meta: 'React, Next.js, TypeScript, Tailwindcss, Axios, TMDB API',
     link: 'https://movieapptruji.vercel.app/',
     delayAnimation: '100'
   },
   {
     img: 'lotr',
     title: 'LotR Memory Game',
+    meta: 'React, CSS, JavaScript',
     link: 'https://lotrmemory-atrujillo.netlify.app/',
     delayAnimation: '100'
   },
   {
     img: 'ledger',
     title: 'Ledger CLI Tool',
+    meta: 'Python, Numpy, Argparse',
     link: 'https://github.com/trujillo9616/LedgerTruji',
     delayAnimation: '100'
   }
@@ -68,7 +78,7 @@ const Portfolio = () => {
                             {item.title}
                           </a>
                         </h3>
-                        <span>{item.meta}</span>
+                        <span className='margin'>{item.meta}</span>
                       </div>
                     </div>
                   </li>
