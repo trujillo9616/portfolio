@@ -2,15 +2,21 @@ import React from 'react'
 
 const portfolioItems = [
   {
+    img: 'movieapi',
+    title: 'MovieApp Website',
+    link: 'https://movieapptruji.vercel.app/',
+    delayAnimation: '100'
+  },
+  {
     img: 'lotr',
     title: 'LotR Memory Game',
     link: 'https://lotrmemory-atrujillo.netlify.app/',
     delayAnimation: '100'
   },
   {
-    img: 'movieapi',
-    title: 'Best Movie Website',
-    link: 'https://movieapptruji.vercel.app/',
+    img: 'ledger',
+    title: 'Ledger CLI Tool',
+    link: 'https://github.com/trujillo9616/LedgerTruji',
     delayAnimation: '100'
   }
 ]
