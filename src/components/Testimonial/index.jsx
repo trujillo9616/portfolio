@@ -45,13 +45,13 @@ const Testimonial = () => {
           <li key={i} className='item'>
             <div className='texts'>
               <p>
-                {testimonial.quote}
+                {`"${testimonial.quote}"`}
               </p>
               <div className='author'>
                 <div className='image'>
                   <div
                     className='main'
-                    style={{ 
+                    style={{
                       backgroundImage: `url(${process.env.PUBLIC_URL + testimonial.image})`,
                     }}></div>
                 </div>
